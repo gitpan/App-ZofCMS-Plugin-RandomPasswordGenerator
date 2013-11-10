@@ -3,11 +3,11 @@ package App::ZofCMS::Plugin::RandomPasswordGenerator;
 use warnings;
 use strict;
 
-our $VERSION = '0.0102';
+our $VERSION = '0.0103';
 
 use base 'App::ZofCMS::Plugin::Base';
 use Data::SimplePassword;
-use Digest::MD5 qw/md5_hex/;
+use Digest::MD5 (qw/md5_hex/);
 
 sub _key { 'plug_random_password_generator' }
 sub _defaults {
@@ -42,6 +42,8 @@ sub _do {
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

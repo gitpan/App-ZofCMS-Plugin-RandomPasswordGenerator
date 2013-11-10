@@ -17,7 +17,9 @@ my $builder = Module::Build->new(
         'App::ZofCMS::Plugin::Base' => 0.0102,
         'Data::SimplePassword'      => 0.04,
         'Digest::MD5'               => 2.36,
+        'perl' => '5.006', 
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'App-ZofCMS-Plugin-RandomPasswordGenerator-*' ],
     create_makefile_pl => 'traditional',
 );
